@@ -121,7 +121,10 @@ header button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 25% 34%;
+  min-height: 50vh;
   height: 50vh; 
+  max-height: 50vh;
+  width: 100% !important;
 }
 
 /*
@@ -159,7 +162,10 @@ header button:hover {
   padding: 10px 12px;
   color: white;
   margin-top: 15px;
-  
+  transition: 0.3s ease-in;
 }
 
-.welcome-content
+.welcome-content button:hover {
+  background-color: white;
+  color: black;
+}

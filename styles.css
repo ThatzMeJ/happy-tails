@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -104,9 +105,17 @@ header button {
   transition: 0.2s ease-in-out;
 }
 
+header button a {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+header button a:hover {
+  color: white;
+}
+
 header button:hover {
   background: #bca858;
-  color: white;
 }
 
 .welcome-area {
@@ -125,6 +134,10 @@ header button:hover {
   height: 50vh; 
   max-height: 50vh;
   width: 100% !important;
+}
+
+.menu {
+  display: none;
 }
 
 /*
@@ -168,4 +181,394 @@ header button:hover {
 .welcome-content button:hover {
   background-color: white;
   color: black;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20%;
+  margin-bottom: 50px;
+  width: 1000px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: inherit;
+  border: 1px solid black;
+  animation: slideIn 0.5s ease-in forwards;
+}
+
+.column img {
+  width: 350px;
+  height: 300px;
+}
+
+.column p {
+  width: 350px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments h3 {
+  color: rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.comments h2 {
+  font-size: calc(1.625rem + 1vw);
+  margin-bottom: 20px;
+}
+
+.comment-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1400px;
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 219px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.name {
+  color: #9edea2;
+  font-size: 1.4rem;
+}
+
+.profile div div:nth-child(2) {
+  margin-top: -8px;
+  font-size: 1.1rem;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*
+  Pet_hotel CSS
+*/
+
+.welcome-pet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-pet h1 {
+  font-size: calc(1.625rem + 3vw);
+}
+
+.welcome-pet h3 {
+  font-size: calc(1.625rem + 1vw);
+  color: white;
+}
+
+.bg-pet {
+  background-image: url(images/02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 34%;
+  min-height: 50vh;
+  height: 50vh; 
+  max-height: 50vh;
+  width: 100% !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: calc(1.625rem + 5vw);
+  margin-bottom: 30px;
+}
+
+.hotel-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1400px;
+  height: max-content;
+}
+
+.hero {
+  display: flex;
+  justify-content: start;
+  width: 400px;
+  height: 191px;
+}
+
+.hero img {
+  width: 35px;
+  height: 35px;
+  align-self: flex-start;
+  margin-right: 10px;
+}
+
+.hero h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1200px;
+}
+
+.about img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.about-info {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-info h2 {
+  font-size: calc(1.625rem + 1vw);
+}
+
+.about-info h3 {
+  font-size: 1.4rem;
+}
+
+.about-info p {
+  font-size: 1.2rem;
+}
+
+.about-info button {
+  width: 35%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+} 
+
+.about-info button:hover {
+  background: #bca858;
+  color: white;
+}
+
+.h3-pet {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*
+Contact CSS
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+td[colspan="2"] {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+table h1 {
+  font-size: calc(1.625rem + 4.5vw);
+  text-align: center;
+}
+
+.contact-res {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-res h1 {
+  font-size: calc(1.625rem + 4.5vw);
+  margin-bottom: -20px;
+}
+
+.contact-res h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.contact-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-location div {
+  font-size: 1.4rem;
+}
+/*
+  Footer CSS
+*/
+
+footer {
+  background: #27272b;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-section {
+  color: white;
+  font-size: 1.2rem;
+}
+/*
+Phone
+*/
+
+@media (max-width:425px ) {
+  body {
+    width: 425px;
+    height: 500px;
+  }
+  .logo {
+    margin-right: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 240px;
+  }
+  header {
+    width: 405px;
+    padding: 0;
+    justify-content:start;
+  }
+  .bg-img {
+    width: 100px;
+  }
+  nav,img:nth-child(3),header button {
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
+  .welcome-content h3 {
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  .welcome-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .welcome-content p {
+    display: none;
+  }
+  .column-container {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 22rem; */
+  }
+  .column:nth-child(2) {
+    display: none;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+
+
+/*
+ Tablet
+*/
+@media (max-width:769px) {
+  html {
+    width: 1100px;
+  }
+
+  .welcome-content h3 {
+    margin-top: -15px;
+  }
+
+  .comments {
+    display: none;
+  }
+
+  .column-container {
+    width: 720px;
+  }
+}
+
+
+@media (max-width:1224px ) {
+  html {
+    width: fit-content;
+  }
 }
